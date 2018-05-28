@@ -1,0 +1,35 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/atec_bg.qm</file>
+        <file alias="ca">locale/atec_ca.qm</file>
+        <file alias="cs">locale/atec_cs.qm</file>
+        <file alias="da">locale/atec_da.qm</file>
+        <file alias="de">locale/atec_de.qm</file>
+        <file alias="en">locale/atec_en.qm</file>
+        <file alias="en_US">locale/atec_en_US.qm</file>
+        <file alias="es">locale/atec_es.qm</file>
+        <file alias="es_ES">locale/atec_es_ES.qm</file>
+        <file alias="fi">locale/atec_fi.qm</file>
+        <file alias="fr_FR">locale/atec_fr_FR.qm</file>
+        <file alias="hi_IN">locale/atec_hi_IN.qm</file>
+        <file alias="hr">locale/atec_hr.qm</file>
+        <file alias="hr_HR">locale/atec_hr_HR.qm</file>
+        <file alias="it">locale/atec_it.qm</file>
+        <file alias="ja">locale/atec_ja.qm</file>
+        <file alias="ko_KR">locale/atec_ko_KR.qm</file>
+        <file alias="lt_LT">locale/atec_lt_LT.qm</file>
+        <file alias="nl">locale/atec_nl.qm</file>
+        <file alias="pl">locale/atec_pl.qm</file>
+        <file alias="pt">locale/atec_pt.qm</file>
+        <file alias="pt_BR">locale/atec_pt_BR.qm</file>
+        <file alias="ro_RO">locale/atec_ro_RO.qm</file>
+        <file alias="ru">locale/atec_ru.qm</file>
+        <file alias="sk">locale/atec_sk.qm</file>
+        <file alias="sv">locale/atec_sv.qm</file>
+        <file alias="tr">locale/atec_tr.qm</file>
+        <file alias="uk">locale/atec_uk.qm</file>
+        <file alias="vi">locale/atec_vi.qm</file>
+        <file alias="zh_CN">locale/atec_zh_CN.qm</file>
+        <file alias="zh_TW">locale/atec_zh_TW.qm</file>
+    </qresource>
+</RCC>
