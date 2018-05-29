@@ -236,7 +236,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "0499A7AF4806FC6DE640D23BC5936C29B77ADF2174B4F45492727F897AE63CF8D27B2F05040606E0D14B547916379FA10716E344E745F880EDC037307186AA25B7";
+        strSporkKey = "0472d6651a6da9b2cfef78dd005a808747511f1609f5bc896c9b3a01ee11073aaecec59e3dadbdf13bbb5971b6eca1a66ec148b9915f4fce2a9fa191264feebfaf";
         strSporkKeyOld = "04B433E6598390C992F4F022F20D3B4CBBE691652EE7C48243B81701CBDB7CC7D7BF0EE09E154E6FCBF2043D65AF4E9E97B89B5DBAF830D83B9B7F469A6C45A717";
         strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
@@ -342,7 +342,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "04A8B319388C0F8588D238B9941DC26B26D3F9465266B368A051C5C100F79306A557780101FE2192FE170D7E6DEFDCBEE4C8D533396389C0DAFFDBC842B002243C";
+        strSporkKey = "04a8e17a9116fc668f3fb8ba44dad541093ea33876c625defd594a2b3aeb0f370616f98766b43d562a75f6f5bced937390e9e4f4a4c96d36b3ccc471256623ec5e";
         strSporkKeyOld = "04348C2F50F90267E64FACC65BFDC9D0EB147D090872FB97ABAE92E9A36E6CA60983E28E741F8E7277B11A7479B626AC115BA31463AC48178A5075C5A9319D4A38";
         strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
         nStartMasternodePayments = 1530403200; //Sunday, 01-Jul-18 00:00:00 UTC
@@ -384,13 +384,13 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 42476;
-      //                   printf("genesis.nTime = %u \n", genesis.nTime);
-        //                   printf("genesis.nNonce = %u \n", genesis.nNonce);
-          //                 printf("genesis.nVersion = %u \n", genesis.nVersion);
-            //               printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-              //             printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str());
+                         printf("genesis.nTime = %u \n", genesis.nTime);
+                         printf("genesis.nNonce = %u \n", genesis.nNonce);
+                         printf("genesis.nVersion = %u \n", genesis.nVersion);
+                         printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+                         printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str());
 
-        if (false && genesis.GetHash() != hashGenesisBlock)
+        if (true && genesis.GetHash() != hashGenesisBlock)
                        {
                            printf("Searching for genesis block...\n");
                            uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
