@@ -53,14 +53,13 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("000007ea637f7d9ea0163ac038f28d0226b4851b151cd9c44d0ec231bfcf5dae"))
-    (2, uint256("98aff9d605bf123247f98b1e3a02567eb5799d208d78ec30fb89737b1c1f79c5"));
+    (0, uint256("000007ea637f7d9ea0163ac038f28d0226b4851b151cd9c44d0ec231bfcf5dae"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1526047069, // * UNIX timestamp of last checkpoint block
-    1,    // * total number of transactions between genesis and last checkpoint
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    2000        // * estimated number of transactions per day after checkpoint
+    0        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -122,7 +121,7 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // ATEC: 1 day
+        nTargetTimespan = 24 * 60 * 60; // ATEC: 1 day
         nTargetSpacing = 1 * 60;  // ATEC: 1 minute
         nMaturity = 100;
         nMasternodeCountDrift = 20;
@@ -209,18 +208,12 @@ public:
 
         assert(hashGenesisBlock == uint256("0x000007ea637f7d9ea0163ac038f28d0226b4851b151cd9c44d0ec231bfcf5dae"));
         assert(genesis.hashMerkleRoot == uint256("0x65f59bfc3070e4a8e0c5fff18982af23606bc74c9f30910f1e52dcbefe55a066 "));
-
-        vSeeds.push_back(CDNSSeedData("80.211.228.20", "80.211.228.20"));     // Primary DNS Seeder from Fuzzbawls
-        vSeeds.push_back(CDNSSeedData("212.237.26.205", "212.237.26.205"));    // Secondary DNS Seeder from Fuzzbawls
-        vSeeds.push_back(CDNSSeedData("80.211.237.240", "80.211.237.240"));         // Single node address
-        vSeeds.push_back(CDNSSeedData("80.211.169.16", "80.211.169.16")); // Single node address
-        vSeeds.push_back(CDNSSeedData("80.211.2.226", "80.211.2.226"));           // Single node address
-
+ 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x12)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x12)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
 
