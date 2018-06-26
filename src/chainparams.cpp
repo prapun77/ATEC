@@ -168,7 +168,7 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 5862012;
         hashGenesisBlock = genesis.GetHash() ;
-  /*                         printf("Searching for genesis block...\n");
+                           printf("Searching for genesis block...\n");
                            uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
                            uint256 thash;
 
@@ -191,10 +191,10 @@ public:
                            printf("genesis.nTime = %u \n", genesis.nTime);
                            printf("genesis.nNonce = %u \n", genesis.nNonce);
                            printf("genesis.nVersion = %u \n", genesis.nVersion);
-                           printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());// first this, then comment this line out and uncomment the one under.
+                     //      printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());// first this, then comment this line out and uncomment the one under.
                            printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str());// improvised. worked for me, to find merkle root
-*/
-   //        hashGenesisBlock = genesis.GetHash();
+ 
+  //      hashGenesisBlock = genesis.GetHash();
   //// debug print
   //        printf("GenesisBlock %s\n", hashGenesisBlock.ToString().c_str());
   //      printf("MerKleRoot %s\n", genesis.hashMerkleRoot.ToString().c_str());
