@@ -299,7 +299,7 @@ public:
         //printf("test GenesisBlock %s\n", hashGenesisBlock.ToString().c_str());
         //printf("test MerKleRoot %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("00000696bc56f4b59c5568965634a1733607b0aaf0bd16d3d4510e867da056b6"));
+        assert(hashGenesisBlock == uint256("0x00000696bc56f4b59c5568965634a1733607b0aaf0bd16d3d4510e867da056b6"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
