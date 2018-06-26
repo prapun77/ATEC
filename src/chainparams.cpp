@@ -201,7 +201,7 @@ public:
 
 
         assert(hashGenesisBlock == uint256("0x00000696bc56f4b59c5568965634a1733607b0aaf0bd16d3d4510e867da056b6"));
-        assert(genesis.hashMerkleRoot == uint256("oxe6aad2b1e24a10a054790a4f2dd3d5b267e54f70afbf889e5f6ff30a757f7c83"));
+        assert(genesis.hashMerkleRoot == uint256("0xe6aad2b1e24a10a054790a4f2dd3d5b267e54f70afbf889e5f6ff30a757f7c83"));
  
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
