@@ -166,9 +166,9 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 152604706;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 5057641;
+        genesis.nNonce = 5862012;
         hashGenesisBlock = genesis.GetHash() ;
-                           printf("Searching for genesis block...\n");
+  /*                         printf("Searching for genesis block...\n");
                            uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
                            uint256 thash;
 
@@ -193,15 +193,15 @@ public:
                            printf("genesis.nVersion = %u \n", genesis.nVersion);
                            printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());// first this, then comment this line out and uncomment the one under.
                            printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str());// improvised. worked for me, to find merkle root
-
+*/
    //        hashGenesisBlock = genesis.GetHash();
-   //// debug print
-//        printf("GenesisBlock %s\n", hashGenesisBlock.ToString().c_str());
+  //// debug print
+  //        printf("GenesisBlock %s\n", hashGenesisBlock.ToString().c_str());
   //      printf("MerKleRoot %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
 
-        assert(hashGenesisBlock == uint256("0x000007ea637f7d9ea0163ac038f28d0226b4851b151cd9c44d0ec231bfcf5dae"));
-        assert(genesis.hashMerkleRoot == uint256("0x65f59bfc3070e4a8e0c5fff18982af23606bc74c9f30910f1e52dcbefe55a066 "));
+        assert(hashGenesisBlock == uint256("0x00000696bc56f4b59c5568965634a1733607b0aaf0bd16d3d4510e867da056b6"));
+        assert(genesis.hashMerkleRoot == uint256("oxe6aad2b1e24a10a054790a4f2dd3d5b267e54f70afbf889e5f6ff30a757f7c83"));
  
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -299,7 +299,7 @@ public:
         //printf("test GenesisBlock %s\n", hashGenesisBlock.ToString().c_str());
         //printf("test MerKleRoot %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("0x000007ea637f7d9ea0163ac038f28d0226b4851b151cd9c44d0ec231bfcf5dae"));
+        assert(hashGenesisBlock == uint256("00000696bc56f4b59c5568965634a1733607b0aaf0bd16d3d4510e867da056b6"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
