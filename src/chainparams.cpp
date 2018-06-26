@@ -294,7 +294,7 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 152604706;
-        genesis.nNonce = 5057641;
+        genesis.nNonce = 5862012;
         hashGenesisBlock = genesis.GetHash();
         //printf("test GenesisBlock %s\n", hashGenesisBlock.ToString().c_str());
         //printf("test MerKleRoot %s\n", genesis.hashMerkleRoot.ToString().c_str());
