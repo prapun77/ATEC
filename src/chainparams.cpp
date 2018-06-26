@@ -406,7 +406,7 @@ public:
                            printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str());
 
                        }
-        assert(hashGenesisBlock == uint256("0xb1f6d5717f4e047c850391840843a33343489ec184a7a4ea0c2eba672fc54ca0"));
+        assert(hashGenesisBlock == uint256("0x3fc8ab3b563e1622118766fb918c3e79862dc9cb7f5b0fa3d4493fdccd6c6867"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
